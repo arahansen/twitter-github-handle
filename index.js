@@ -21,8 +21,7 @@
     if (githubUser) {
       githubUrl = githubUser.html_url;
     } else {
-      githubUrl = 'https://github.com/search?q=' + user.firstname + '+' +
-        user.lastname + '&ref=searchresults&type=Users';
+      return;
     }
 
     var githubContainer = document.createElement('span');
