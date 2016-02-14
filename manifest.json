@@ -4,10 +4,15 @@
   "name": "Twitter Github Link",
   "description": "Adds a link to github for twitter users",
   "version": "0.1",
+  "permissions": [
+    "storage",
+    "https://api.github.com/*"
+  ],
   "content_scripts": [
   {
     "matches": [
-      "https://twitter.com/*"
+      "https://twitter.com/*",
+      "https://github.com/*"
     ],
     "js": ["index.js"],
     "run_at": "document_end"
