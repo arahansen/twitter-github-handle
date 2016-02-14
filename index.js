@@ -33,7 +33,6 @@
 
     githubContainer.appendChild(githubLogo);
     githubContainer.appendChild(githubLink);
-
     userElem.parentElement.insertBefore(githubContainer, userElem.nextSibling);
   }
 
